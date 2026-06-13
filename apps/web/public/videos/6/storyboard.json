@@ -1,0 +1,64 @@
+{
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voiceover_text": "In today's fast-paced world, instant decisions drive success.",
+      "image_prompt": "A dynamic cityscape at dusk, showcasing towering skyscrapers illuminated against a vibrant sunset, with bright, speedy cars weaving through traffic and pedestrians hustling along the sidewalks, all captured in a high-energy, photorealistic style that emphasizes motion and urgency.",
+      "text_overlay": "Decide Instantly, Succeed Endlessly",
+      "duration": 5,
+      "text": "Decide Instantly, Succeed Endlessly",
+      "image_path": "C:\\Users\\Admin\\Downloads\\ContentOSMVP\\apps\\web\\public\\videos\\6\\scene_1.jpg",
+      "audio_path": "/videos/6/scene_1.mp3",
+      "image_url": "/videos/6/scene_1.jpg",
+      "audio_url": "/videos/6/scene_1.mp3"
+    },
+    {
+      "scene_number": 2,
+      "voiceover_text": "Ultra-low latency AI engines empower enterprises to respond in real-time.",
+      "image_prompt": "A high-tech server room filled with sleek, glowing servers, displaying colorful data streams across multiple screens. A focused data analyst monitors the operations, illuminated by the glow of digital screens, creating a futuristic, immersive atmosphere.",
+      "text_overlay": "Real-Time Empowerment Through AI",
+      "duration": 5,
+      "text": "Real-Time Empowerment Through AI",
+      "image_path": "C:\\Users\\Admin\\Downloads\\ContentOSMVP\\apps\\web\\public\\videos\\6\\scene_2.jpg",
+      "audio_path": "/videos/6/scene_2.mp3",
+      "image_url": "/videos/6/scene_2.jpg",
+      "audio_url": "/videos/6/scene_2.mp3"
+    },
+    {
+      "scene_number": 3,
+      "voiceover_text": "From finance to healthcare, every industry benefits from rapid data analysis.",
+      "image_prompt": "A vibrant montage featuring three distinct environments: a modern bank office bustling with professionals analyzing data, a state-of-the-art hospital with medical staff using AI tools, and a tech hub buzzing with innovation. Each segment seamlessly transitions to highlight the diverse applications of AI in industries.",
+      "text_overlay": "AI Transforming Industries",
+      "duration": 5.5,
+      "text": "AI Transforming Industries",
+      "image_path": "C:\\Users\\Admin\\Downloads\\ContentOSMVP\\apps\\web\\public\\videos\\6\\scene_3.jpg",
+      "audio_path": "/videos/6/scene_3.mp3",
+      "image_url": "/videos/6/scene_3.jpg",
+      "audio_url": "/videos/6/scene_3.mp3"
+    },
+    {
+      "scene_number": 4,
+      "voiceover_text": "With The Vertical AI, legacy systems meet cutting-edge innovation.",
+      "image_prompt": "An engaging animation depicting intricate gears meshing seamlessly with glowing digital elements. The animation symbolizes the harmonious integration of traditional legacy systems with advanced technology, featuring sleek transitions and a modern aesthetic that underscores innovation.",
+      "text_overlay": "Bridging Legacy and Innovation",
+      "duration": 5,
+      "text": "Bridging Legacy and Innovation",
+      "image_path": "C:\\Users\\Admin\\Downloads\\ContentOSMVP\\apps\\web\\public\\videos\\6\\scene_4.jpg",
+      "audio_path": "/videos/6/scene_4.mp3",
+      "image_url": "/videos/6/scene_4.jpg",
+      "audio_url": "/videos/6/scene_4.mp3"
+    },
+    {
+      "scene_number": 5,
+      "voiceover_text": "Join us to unlock your enterprise's full potential with AI.",
+      "image_prompt": "An inspiring scene of a diverse group of professionals gathered around a high-tech conference table, collaboratively engaging in discussion while digital displays showcase data insights. The ambiance is bright, professional, and infused with a spirit of innovation and teamwork.",
+      "text_overlay": "Unlock Your Enterprise Potential",
+      "duration": 5,
+      "text": "Unlock Your Enterprise Potential",
+      "image_path": "C:\\Users\\Admin\\Downloads\\ContentOSMVP\\apps\\web\\public\\videos\\6\\scene_5.jpg",
+      "audio_path": "/videos/6/scene_5.mp3",
+      "image_url": "/videos/6/scene_5.jpg",
+      "audio_url": "/videos/6/scene_5.mp3"
+    }
+  ]
+}

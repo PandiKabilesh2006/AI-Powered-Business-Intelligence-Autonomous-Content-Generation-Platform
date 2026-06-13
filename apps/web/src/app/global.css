@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input, textarea, select, button {
+    @apply outline-none focus:outline-none;
+  }
+}
+
+/* Premium Animations & Glows */
+@keyframes premium-float {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(60px, 40px) scale(1.15); }
+  100% { transform: translate(-30px, 80px) scale(0.9); }
+}
+
+@keyframes premium-float-reverse {
+  0% { transform: translate(0, 0) scale(1.15); }
+  50% { transform: translate(-70px, -30px) scale(0.95); }
+  100% { transform: translate(40px, -60px) scale(1.1); }
+}
+
+.premium-glow-1 {
+  background: radial-gradient(circle, rgba(209, 223, 242, 0.45) 0%, rgba(250, 224, 212, 0.2) 60%, transparent 100%);
+  filter: blur(80px);
+  animation: premium-float 22s ease-in-out infinite alternate;
+}
+
+.premium-glow-2 {
+  background: radial-gradient(circle, rgba(250, 224, 212, 0.45) 0%, rgba(209, 223, 242, 0.2) 60%, transparent 100%);
+  filter: blur(80px);
+  animation: premium-float-reverse 26s ease-in-out infinite alternate;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-card-dark {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Transition Utilities */
+.transition-premium {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hover-premium {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-premium:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px -8px rgba(31, 63, 116, 0.08);
+}
