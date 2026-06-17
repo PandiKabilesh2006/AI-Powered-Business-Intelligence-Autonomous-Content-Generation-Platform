@@ -19,8 +19,7 @@ const env = loadEnv(process.env.NODE_ENV || 'development', __dirname, '');
 Object.assign(process.env, env);
 
 export default defineConfig({
-  // Keep them available via import.meta.env.NEXT_PUBLIC_*
-  envPrefix: 'NEXT_PUBLIC_',
+  envPrefix: ['NEXT_PUBLIC_', 'VITE_'],
   optimizeDeps: {
     // Explicitly include fast-glob, since it gets dynamically imported and we
     // don't want that to cause a re-bundle.

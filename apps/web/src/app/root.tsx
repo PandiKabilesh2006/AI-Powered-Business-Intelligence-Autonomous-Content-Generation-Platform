@@ -458,8 +458,8 @@ export function Layout({ children }: { children: ReactNode }) {
 
 export const ErrorBoundary = InternalErrorBoundary;
 
-const clerkPubKey = (typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY : undefined) || 
-  (import.meta.env && import.meta.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY) || 
+const clerkPubKey = (typeof process !== 'undefined' ? (process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY || process.env.VITE_CLERK_PUBLISHABLE_KEY || process.env.CLERK_PUBLISHABLE_KEY) : undefined) || 
+  (import.meta.env && (import.meta.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY || import.meta.env.VITE_CLERK_PUBLISHABLE_KEY || import.meta.env.CLERK_PUBLISHABLE_KEY)) || 
   'pk_test_dGVzdC1jbGVyay1rZXktOTkuY2xlcmsuYWNjb3VudHMuZGV2JA';
 
 export default function App() {

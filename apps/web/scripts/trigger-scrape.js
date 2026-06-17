@@ -36,7 +36,8 @@ const websiteUrl = "https://thevertical.ai/";
 async function runScrape() {
   try {
     console.log("1. Fetching from Firecrawl...");
-    const firecrawlResponse = await fetch("https://api.firecrawl.dev/v1/scrape", {
+    const firecrawlApiUrl = process.env.FIRECRAWL_API_URL || "https://api.firecrawl.dev";
+    const firecrawlResponse = await fetch(`${firecrawlApiUrl}/v1/scrape`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

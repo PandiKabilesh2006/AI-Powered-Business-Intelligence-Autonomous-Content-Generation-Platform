@@ -26,8 +26,9 @@ export async function POST(request) {
     // Scrape each competitor
     for (const url of competitorUrls.slice(0, 5)) {
       try {
+        const firecrawlApiUrl = process.env.FIRECRAWL_API_URL || "https://api.firecrawl.dev";
         const firecrawlResponse = await fetch(
-          "https://api.firecrawl.dev/v1/scrape",
+          `${firecrawlApiUrl}/v1/scrape`,
           {
             method: "POST",
             headers: {

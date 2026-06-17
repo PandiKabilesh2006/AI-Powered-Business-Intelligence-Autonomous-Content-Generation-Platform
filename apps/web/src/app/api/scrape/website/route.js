@@ -12,8 +12,9 @@ export async function POST(request) {
     }
 
     // Use Firecrawl to scrape the website
+    const firecrawlApiUrl = process.env.FIRECRAWL_API_URL || "https://api.firecrawl.dev";
     const firecrawlResponse = await fetch(
-      "https://api.firecrawl.dev/v1/scrape",
+      `${firecrawlApiUrl}/v1/scrape`,
       {
         method: "POST",
         headers: {
