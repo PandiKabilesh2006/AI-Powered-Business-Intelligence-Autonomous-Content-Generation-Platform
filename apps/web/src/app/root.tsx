@@ -173,9 +173,8 @@ function InternalErrorBoundary({ error: errorArg }: Route.ErrorBoundaryProps) {
     <>
       {!isInIframe() && (
         <div
-          className={`fixed bottom-4 left-1/2 transform -translate-x-1/2 max-w-md z-50 transition-all duration-500 ease-out ${
-            isOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
-          }`}
+          className={`fixed bottom-4 left-1/2 transform -translate-x-1/2 max-w-md z-50 transition-all duration-500 ease-out ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
+            }`}
           style={{ width: '75vw' }}
         >
           <div
@@ -183,9 +182,9 @@ function InternalErrorBoundary({ error: errorArg }: Route.ErrorBoundaryProps) {
             style={
               scaleFactor !== 1
                 ? ({
-                    transform: `scale(${scaleFactor})`,
-                    transformOrigin: 'bottom center',
-                  } as CSSProperties)
+                  transform: `scale(${scaleFactor})`,
+                  transformOrigin: 'bottom center',
+                } as CSSProperties)
                 : undefined
             }
           >
@@ -458,8 +457,8 @@ export function Layout({ children }: { children: ReactNode }) {
 
 export const ErrorBoundary = InternalErrorBoundary;
 
-const clerkPubKey = (typeof process !== 'undefined' ? (process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY || process.env.VITE_CLERK_PUBLISHABLE_KEY || process.env.CLERK_PUBLISHABLE_KEY) : undefined) || 
-  (import.meta.env && (import.meta.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY || import.meta.env.VITE_CLERK_PUBLISHABLE_KEY || import.meta.env.CLERK_PUBLISHABLE_KEY)) || 
+const clerkPubKey = (typeof process !== 'undefined' ? (process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY || process.env.VITE_CLERK_PUBLISHABLE_KEY || process.env.CLERK_PUBLISHABLE_KEY) : undefined) ||
+  (import.meta.env && (import.meta.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY || import.meta.env.VITE_CLERK_PUBLISHABLE_KEY || import.meta.env.CLERK_PUBLISHABLE_KEY)) ||
   'pk_test_dGVzdC1jbGVyay1rZXktOTkuY2xlcmsuYWNjb3VudHMuZGV2JA';
 
 export default function App() {
