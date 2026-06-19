@@ -1,0 +1,64 @@
+{
+  "scenes": [
+    {
+      "scene_number": 1,
+      "voiceover_text": "Start your day with a focused mindset.",
+      "image_prompt": "A serene sunrise casting a golden hue over a modern city skyline, capturing the stillness and potential of a new day, photorealistic, 16:9 widescreen format.",
+      "text_overlay": "Embrace Focus",
+      "duration": 4.0,
+      "text": "Embrace Focus",
+      "image_path": "E:\\Projects\\ContentOS\\apps\\web\\public\\videos\\3\\scene_1.mp4",
+      "audio_path": "E:\\Projects\\ContentOS\\apps\\web\\public\\videos\\3\\scene_1.mp3",
+      "image_url": "/videos/3/scene_1.mp4",
+      "audio_url": "/videos/3/scene_1.mp3"
+    },
+    {
+      "scene_number": 2,
+      "voiceover_text": "Begin with a quick five-minute meditation.",
+      "image_prompt": "Close-up of a person meditating by a large window with soft morning light illuminating a minimalist room, creating a tranquil atmosphere, photorealistic, 16:9 widescreen format.",
+      "text_overlay": "Meditate for Clarity",
+      "duration": 4.8,
+      "text": "Meditate for Clarity",
+      "image_path": "E:\\Projects\\ContentOS\\apps\\web\\public\\videos\\3\\scene_2.mp4",
+      "audio_path": "E:\\Projects\\ContentOS\\apps\\web\\public\\videos\\3\\scene_2.mp3",
+      "image_url": "/videos/3/scene_2.mp4",
+      "audio_url": "/videos/3/scene_2.mp3"
+    },
+    {
+      "scene_number": 3,
+      "voiceover_text": "Plan your day with a priority checklist.",
+      "image_prompt": "Overhead shot of a hand elegantly writing on a notepad, surrounded by a chic desktop setup with a steaming cup of coffee, natural daylight streaming in, photorealistic, 16:9 widescreen format.",
+      "text_overlay": "Prioritize Success",
+      "duration": 5.2,
+      "text": "Prioritize Success",
+      "image_path": "E:\\Projects\\ContentOS\\apps\\web\\public\\videos\\3\\scene_3.mp4",
+      "audio_path": "E:\\Projects\\ContentOS\\apps\\web\\public\\videos\\3\\scene_3.mp3",
+      "image_url": "/videos/3/scene_3.mp4",
+      "audio_url": "/videos/3/scene_3.mp3"
+    },
+    {
+      "scene_number": 4,
+      "voiceover_text": "Fuel your body with a nutritious breakfast.",
+      "image_prompt": "A vibrant breakfast spread featuring fresh fruits, grains, and a smoothie in a bright, modern kitchen setting, photorealistic, 16:9 widescreen format.",
+      "text_overlay": "Energize with Nutrition",
+      "duration": 5.2,
+      "text": "Energize with Nutrition",
+      "image_path": "E:\\Projects\\ContentOS\\apps\\web\\public\\videos\\3\\scene_4.mp4",
+      "audio_path": "E:\\Projects\\ContentOS\\apps\\web\\public\\videos\\3\\scene_4.mp3",
+      "image_url": "/videos/3/scene_4.mp4",
+      "audio_url": "/videos/3/scene_4.mp3"
+    },
+    {
+      "scene_number": 5,
+      "voiceover_text": "Boost your productivity and achieve more today!",
+      "image_prompt": "Dynamic office scene showcasing diverse professionals energetically collaborating in a sleek, modern workspace, conveying innovation and teamwork, photorealistic, 16:9 widescreen format.",
+      "text_overlay": "Maximize Productivity",
+      "duration": 5.6,
+      "text": "Maximize Productivity",
+      "image_path": "E:\\Projects\\ContentOS\\apps\\web\\public\\videos\\3\\scene_5.mp4",
+      "audio_path": "E:\\Projects\\ContentOS\\apps\\web\\public\\videos\\3\\scene_5.mp3",
+      "image_url": "/videos/3/scene_5.mp4",
+      "audio_url": "/videos/3/scene_5.mp3"
+    }
+  ]
+}
