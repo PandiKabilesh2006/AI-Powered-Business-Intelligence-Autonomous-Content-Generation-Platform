@@ -104,9 +104,28 @@ app.all('/integrations/:path{.+}', async (c, next) => {
     },
   });
 });
+
+app.all('/api/*', async (c, next) => {
+  const path = c.req.path;
+  if (path.startsWith('/api/__create') || process.env.USE_FASTAPI_BACKEND !== 'true') {
+    return next();
+  }
+  const url = `http://127.0.0.1:8000${c.req.path}${c.req.url.indexOf('?') !== -1 ? c.req.url.substring(c.req.url.indexOf('?')) : ''}`;
+  console.log(`[proxy] Forwarding ${c.req.method} ${path} -> ${url}`);
+  
+  return proxy(url, {
+    method: c.req.method,
+    body: c.req.raw.body ?? null,
+    // @ts-expect-error -- duplex is required for body forwarding
+    duplex: 'half',
+    headers: c.req.header(),
+  });
+});
+
 app.route(API_BASENAME, api);
 
 export default await createHonoServer({
   app,
   defaultLogger: false,
 });
+

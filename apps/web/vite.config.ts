@@ -19,6 +19,9 @@ const env = loadEnv(process.env.NODE_ENV || 'development', __dirname, '');
 Object.assign(process.env, env);
 
 export default defineConfig({
+  build: {
+    target: 'esnext',
+  },
   envPrefix: ['NEXT_PUBLIC_', 'VITE_'],
   optimizeDeps: {
     // Explicitly include fast-glob, since it gets dynamically imported and we
@@ -39,10 +42,12 @@ export default defineConfig({
   plugins: [
     nextPublicProcessEnv(),
     restartEnvFileChange(),
-    reactRouterHonoServer({
-      serverEntryPoint: './__create/index.ts',
-      runtime: 'node',
-    }),
+    ...(process.env.NODE_ENV !== 'production' ? [
+      reactRouterHonoServer({
+        serverEntryPoint: './__create/index.ts',
+        runtime: 'node',
+      })
+    ] : []),
     babel({
       include: ['src/**/*.{js,jsx,ts,tsx}'], // or RegExp: /src\/.*\.[tj]sx?$/
       exclude: /node_modules/, // skip everything else

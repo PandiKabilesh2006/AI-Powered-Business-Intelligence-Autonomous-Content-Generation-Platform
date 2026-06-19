@@ -3,7 +3,10 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "react-router dev",
+		"dev": "concurrently -k -n \"frontend,backend\" -c \"blue,green\" \"npm run dev:frontend\" \"npm run dev:backend\"",
+		"dev:frontend": "react-router dev",
+		"dev:backend": "cd ../.. && python -m uvicorn apps.backend.main:app --host 127.0.0.1 --port 8000 --reload",
+		"build": "react-router build",
 		"typecheck": "react-router typegen && tsc --noEmit"
 	},
 	"dependencies": {
@@ -86,6 +89,7 @@
 		"@types/ws": "^8.18.1",
 		"autoprefixer": "^10.4.21",
 		"babel-plugin-react-require": "^4.0.3",
+		"concurrently": "^10.0.3",
 		"fast-glob": "^3.3.3",
 		"jsdom": "^26.1.0",
 		"micromatch": "^4.0.8",
