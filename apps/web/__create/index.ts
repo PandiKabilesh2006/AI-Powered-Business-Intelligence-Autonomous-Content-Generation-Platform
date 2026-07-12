@@ -33,7 +33,7 @@ const app = new Hono();
 app.use('*', requestId());
 
 app.use('*', (c, next) => {
-  const requestId = c.get('requestId') as string;
+  const requestId = c.get('requestId' as any) as string;
   return als.run({ requestId }, () => next());
 });
 
