@@ -10,4 +10,5 @@ node_modules/
 build/
 dist/
 .react-router/
+.vercel/
 .DS_Store
