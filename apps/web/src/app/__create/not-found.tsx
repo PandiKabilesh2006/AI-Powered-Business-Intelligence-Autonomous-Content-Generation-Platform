@@ -24,9 +24,7 @@ interface ParentSitemap {
 
 export default function CreateDefaultNotFoundPage({
   loaderData,
-}: {
-  loaderData: Awaited<ReturnType<typeof loader>>;
-}) {
+}: Route.ComponentProps) {
   const [siteMap, setSitemap] = useState<ParentSitemap | null>(null);
   const navigate = useNavigate();
 

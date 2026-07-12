@@ -6,7 +6,7 @@
 		"dev": "concurrently -k -n \"frontend,backend\" -c \"blue,green\" \"npm run dev:frontend\" \"npm run dev:backend\"",
 		"dev:frontend": "react-router dev",
 		"dev:backend": "cd ../.. && python -m uvicorn apps.backend.main:app --host 127.0.0.1 --port 8000 --reload",
-		"build": "node scripts/generate-static-routes.js && react-router build",
+		"build": "node scripts/generate-static-routes.js && react-router typegen && react-router build",
 		"typecheck": "react-router typegen && tsc --noEmit"
 	},
 	"dependencies": {
