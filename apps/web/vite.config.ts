@@ -97,6 +97,9 @@ export default defineConfig({
     hmr: {
       overlay: false,
     },
+    watch: {
+      ignored: ['**/build/**', '**/dist/**', '**/node_modules/**'],
+    },
     warmup: {
       clientFiles: ['./src/app/**/*', './src/app/root.tsx', './src/app/routes.ts'],
     },

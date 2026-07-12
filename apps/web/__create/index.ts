@@ -124,6 +124,8 @@ app.all('/api/*', async (c, next) => {
 
 app.route(API_BASENAME, api);
 
+export { app };
+
 export default await createHonoServer({
   app,
   defaultLogger: false,

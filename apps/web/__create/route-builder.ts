@@ -63,8 +63,18 @@ function getHonoPath(routeFile: string): { name: string; pattern: string }[] {
   return transformedParts;
 }
 
+import { registerStaticRoutes } from './static-routes-registry';
+
 // Import and register all routes
 async function registerRoutes() {
+  // Clear existing routes
+  api.routes = [];
+
+  if (typeof import.meta.env === 'undefined' || !import.meta.env.DEV) {
+    registerStaticRoutes(api);
+    return;
+  }
+
   const routeFiles = (
     await findRouteFiles(__dirname).catch((error) => {
       console.error('Error finding route files:', error);
@@ -75,9 +85,6 @@ async function registerRoutes() {
     .sort((a, b) => {
       return b.length - a.length;
     });
-
-  // Clear existing routes
-  api.routes = [];
 
   for (const routeFile of routeFiles) {
     try {
