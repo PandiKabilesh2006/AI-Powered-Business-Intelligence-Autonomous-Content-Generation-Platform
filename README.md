@@ -1,6 +1,9 @@
 # ContentOS MVP
 
 ContentOS is a state-of-the-art AI-powered marketing and branding platform. It automates business intelligence gathering, brand identity creation, multi-format content generation, ad creatives, campaign strategies, and competitor tracking.
+
+**Live Deployment**: [https://ai-powered-business-intelligence-autonomous-cont-production.up.railway.app](https://ai-powered-business-intelligence-autonomous-cont-production.up.railway.app)
+
 ---
 
 ## Tech Stack & Architecture
