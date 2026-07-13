@@ -42,12 +42,10 @@ export default defineConfig({
   plugins: [
     nextPublicProcessEnv(),
     restartEnvFileChange(),
-    ...(process.env.NODE_ENV !== 'production' ? [
-      reactRouterHonoServer({
-        serverEntryPoint: './__create/index.ts',
-        runtime: 'node',
-      })
-    ] : []),
+    reactRouterHonoServer({
+      serverEntryPoint: './__create/index.ts',
+      runtime: 'node',
+    }),
     babel({
       include: ['src/**/*.{js,jsx,ts,tsx}'], // or RegExp: /src\/.*\.[tj]sx?$/
       exclude: /node_modules/, // skip everything else
